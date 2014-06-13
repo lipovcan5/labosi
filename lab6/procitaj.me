@@ -1,0 +1,20 @@
+
+Framework + template + ORM
+
+U ovom primjeru su korišteni slijedeći elementi:
+* framework - Slim
+* template sustav - Jade
+* ORM (Object relational mapping) - Idiorm
+
+dodatno:
+* Twitter bootstrap za lakšu izradu stranica
+* jQuery validator i GUMP za klijentsku i serversku validaciju
+
+
+Važne datoteke i direktoriji:
+* index.php  - osnovni controller za cijelu stranicu, baziran na Slim frameworku
+* views/ - sve stranice opisane u Jade template formatu (u cache poddirektoriju možete pronaći "prevedene" verzije u PHP)
+* logic/ - sve PHP skripte povezane s nužnom logikom potrebnom da stranice funkcioniraju
+
+
+Kako bi sve funkcioniralo, nužna je podrška za .htaccess, a koji je već pripremljen. Također treba importirati podatke u MySQL bazu, te podesiti datoteku logic/idiormUse.php .

@@ -1,0 +1,38 @@
+!!! 5
+html
+  head
+    link(rel='stylesheet', type='text/css', href='.//css/stil.css')
+    link(rel='stylesheet', type='text/css', href='.//css/grid.css')
+    link(rel='stylesheet', type='text/css', href='.//css/normalize.css')
+  body
+    header.header-home
+    .row.wrapper
+      .column.column-6.logo
+        img(src='.//img/logo.png', alt='logo', style='width:200px;')
+        h3 Dominica sancta, quid remediis sunt.
+      .column.column-6.login-form
+        form(action='login', method='POST')
+          table
+            tr
+              td
+                label(for='user') Korisnièko ime
+            tr
+              td
+                input#user(type='text', name='username')
+                br
+                br
+            tr
+              td
+                label(for='pass') Lozinka
+            tr
+              td
+                input#pass(type='password', name='password')
+                br
+                br
+            tr
+              td
+                button(type='submit') Prijava
+    footer.footer-login
+      .footer-login
+        h4 Copyright ZKD, 2014
+  html

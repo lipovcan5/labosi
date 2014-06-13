@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<script type="text/javascript" src="js/search.js"></script>
+</script>
+
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo"/>
+			</div>
+			<div class="status">
+				<button type="button">Odjava</button>
+			</div>
+		</div>
+	</header>
+	
+	<div class="row wrapper">
+		<aside class="column column-4">
+			<!--<nav class="vertical-nav">
+				<a href="#">Meni</a>
+				<a href="#">Meni</a>
+				<a href="#">Meni</a>
+				<a href="#">Meni</a>
+			</nav>-->
+			<ul>
+				<li><a href="popis.html">Popis pacijenata</a></li>
+				<li><a href="unos.html">Unos pacijenata</a></li>		
+				<li><a href="#">Izbornik 1</a></li>
+				<li><a href="#">Izbornik 2</a></li>
+				<li><a href="#">Izbornik 3</a></li>
+				<li><a href="#">Izbornik 4</a></li>
+			</ul>
+		</aside>
+		<article class="column column-8">
+			
+			<input type="text" id="searchTerm" name="filter" onkeyup="doSearch()" style="float:right; margin:10px;">
+
+			<table class="popis" id="dataTable">
+				<thead>
+					<tr>
+						<th>Ime</th>
+						<th>Prezime</th>
+						<th>Spol</th>
+						<th>Datum rođenja</th>
+						<th>Mobitel</th>
+						<th>Adresa</th>
+						<th>Mjesto</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Štefica</td>
+						<td>Ostojić</td>
+						<td>Ž</td>
+						<td>17.3.1937</td>
+						<td>091/7121688</td>
+						<td>Redovka 9</td>
+						<td>Zagreb</td>
+					</tr>
+					<tr>
+						<td>Ivan</td>
+						<td>Kušan</td>
+						<td>M</td>
+						<td>19.7.1979</td>
+						<td>098/1667148</td>
+						<td>Marinovečka 12</td>
+						<td>Zagreb</td>
+					</tr>
+					<tr>
+						<td>Hrvoje</td>
+						<td>Radić</td>
+						<td>M</td>
+						<td>6.6.1944</td>
+						<td>098/7317883</td>
+						<td>Dore Pejačević 28</td>
+						<td>Zagreb</td>
+					</tr>
+					<tr>
+						<td>Vjeran</td>
+						<td>Delić</td>
+						<td>M</td>
+						<td>2.3.1978</td>
+						<td>022/4672651</td>
+						<td>Banovski Put 11</td>
+						<td>Zagreb</td>
+					</tr>
+					<tr>
+						<td>Filip</td>
+						<td>Pavlović</td>
+						<td>M</td>
+						<td>28.3.1939</td>
+						<td>092/6058667</td>
+						<td>Sitnice 24</td>
+						<td>Zagreb</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</div>
+	<footer>
+		<div class="row">
+		<h4>Copyright ZKD, 2014</h4>
+		</div>
+	</footer>
+</body>
+</html>

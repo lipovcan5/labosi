@@ -1,0 +1,15 @@
+.margless{
+    margin:0 !important;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis; /* this works with IE, Safari and Chrome */
+  white-space: nowrap;
+
+}
+
+body { padding-top: 40px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}

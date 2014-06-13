@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo"/>
+			</div>
+			<div class="status">
+				<button type="button">Odjava</button>
+			</div>
+		</div>
+	</header>
+	
+	<div class="row wrapper">
+		<aside class="column column-4">
+			<!--<nav class="vertical-nav">
+				<a href="#">Meni</a>
+				<a href="#">Meni</a>
+				<a href="#">Meni</a>
+				<a href="#">Meni</a>
+			</nav>-->
+			<ul>
+				<li><a href="login.php">Životopis</a></li>
+				<li><a href="popis.html">Popis pacijenata</a></li>
+				<li><a href="unos.html">Unos pacijenata</a></li>
+			</ul>
+		</aside>
+		<article class="column column-8">
+			<h2>Formular za upis pacijenata</h2>
+			<form>
+				<table class="unos">
+					<tr>
+						<td><label for="name">Ime:</label></td>
+						<td><input type="text" name="firstName" id="name"></td>
+					</tr>
+					<tr>
+						<td><label for="surname">Prezime:</label></td>
+						<td><input type="text" name="lastName" id="surname"></td>
+					</tr>
+					<tr>
+						<td><label for="spol">Spol:</label></td>
+						<td><input type="radio" name="gender" value="M" id="spol">M<br>
+							<input type="radio" name="gender" value="Ž" id="spol">Ž</td>
+					<tr>
+						<td><label for="date">Datum rođenja:</label></td>
+						<td><input type="date" name="birthDate" id="date"></td>
+					</tr>
+					<tr>
+						<td><label for="city">Mjesto rođenja:</label></td>
+						<td><input type="text" name="birthPlace" id="city"></td>
+					</tr>
+					<tr>
+						<td><label for="adresa">Adresa i mjesto stanovanja:</label></td>
+						<td><input type="text" name="address" id"adresa"></td>
+					</tr>
+					<tr>
+						<td><label for="krvnaGrupa">Krvna grupa:</label></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><label for="bolesti">Prijašnje medicinske tegobe (srčane tegobe, talk, virusne, bolesti (Hepatitis, HIV)):</label></td>
+						<td><input type="radio" name="illnes" value="DA" id="bolesti">Da<br><input type="radio" name="illnes" value="NE" id="bolest">Ne</td>
+					</tr>	
+					<tr>
+						<td><label for="lijek">Na koje lijekove je osoba alergična:</label></td>
+						<td><input type="text" name="vacine" id="lijek"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Spremi"></td>
+					</tr>
+				</table>
+			</form>
+		</article>
+	</div>
+	<footer>
+		<div class="row">
+		<h4>Copyright ZKD, 2014</h4>
+		</div>
+	</footer>
+</body>
+</html>

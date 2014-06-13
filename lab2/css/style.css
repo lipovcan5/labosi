@@ -1,0 +1,171 @@
+body {
+	width: 100%;
+}
+
+h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+body a:link, a:visited , a:hover, a:active{
+	text-decoration:none;
+	color: white;
+}
+
+header {
+	background-color: #88B51E;
+	background-color: #14786D;
+	background-color: #7A0A12;
+	background-color: #BC1F2A;
+	background-color: white;
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+header .logo {
+	padding-top: 20px;
+}
+
+.header-home {
+	background-color: #BC1F2A;
+	margin-bottom: 70px;	
+}
+
+.logo{
+	float: left;
+	display: block;
+}
+
+.logo img{
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+.status{
+	float: right;
+	margin-top: 35px;
+	margin-right: 20px;
+}
+
+.status button {
+	width: 100px;
+	padding: 2px;
+}
+
+.login-form{
+	float: right;
+	display: block;
+}
+
+.login-form table {
+	margin: 0 auto;
+}
+
+.login-form input {
+	width: 210px;
+}
+
+.login-form button {
+	width: 100px;
+	float: right;
+	padding: 2px;
+}
+
+.wrapper{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	/*background-color: yellow;*/
+}
+
+.wrapper > aside{
+	background-color: #BC1F2A;
+	float: left;
+	display: block;
+	/*background-color: #DDD;*/
+}
+
+.wrapper > aside > ul {
+	list-style-type: none;
+	margin: 0;	
+	padding: 20px;
+}
+
+.wrapper > aside a {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+/*
+.vertical-nav{
+	display: block;
+}*/
+
+.wrapper > article{
+	float: right;
+	display: block;
+	/*background-color: #CCC;*/
+	border-top: solid #BC1F2A 3px;
+	margin-left: -3px;*/
+}
+
+.wrapper > article > table {
+	margin: 10px 15px;
+}
+
+.wrapper > article > table td{
+	padding: 5px;
+}
+
+.wrapper > article > table th{
+	padding: 10px 5px;
+	text-align: left;
+}
+
+nav {
+	margin: 20px auto;
+}
+
+nav a {
+	display: inline;
+	padding: 7px 12px;
+	margin: 15px 20px;
+	background-color: #14786D;
+}
+
+.unos td{
+	padding: 10px;
+}
+
+.popis tr:hover {
+	background-color: #14786D;
+}
+
+footer {
+	background-color: #DE535D;
+	background-color: #88B51E;
+	background-color: #14786D;
+	background-color: #7A0A12;
+	background-color: #BC1F2A;
+	height: 100px;
+	margin-top: 20px;
+	width: 100%;
+	line-height: 50px;
+	color: white;
+}
+
+.footer-login {
+	background-color: #BC1F2A;
+	height: 100px;
+	margin-top: 20px;
+	width: 100%;
+	line-height: 50px;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+}

@@ -1,0 +1,7 @@
+Podaci za bazu:
+username: root
+password: root
+
+Podaci za login:
+username: ivan
+password: ivan

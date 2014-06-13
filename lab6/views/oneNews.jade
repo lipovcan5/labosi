@@ -1,0 +1,106 @@
+!!! 5
+html
+  head
+    link(rel='stylesheet', type='text/css', href='.//css/style.css')
+    link(rel='stylesheet', type='text/css', href='.//css/grid.css')
+    link(rel='stylesheet', type='text/css', href='.//css/normalize.css')
+    meta(charset='UTF-8')
+
+    //script(src="js/jquery.js")
+    script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js")
+
+    title DWA2013
+  body
+    header
+      .row
+        .logo
+          img(src='img/logo.png', alt='logo')
+        .status
+            a(href = "logout")
+                button.btn(type="submit", data-toggle="button",style="position:relative; top:-4px") Odjava            
+    .row.wrapper
+      aside.column.column-4
+        ul
+          li
+            a(href='zivotopis.php') Osobni podaci
+          li
+            a(href='popis.php') Popis pacijenata
+          li
+            a(href='unos.php') Unos pacijenata
+          li
+            a(href='filtriranjePodataka.php') Ispis podataka
+      article.column.column-8
+        p
+          ******* ispis pacijenata !!!!!!!!!!!!!!!!
+        table.unos
+          tr
+            td Ime:
+            td
+              | ');
+              | echo $_POST['firstname'];
+              | echo('
+          tr
+            td Prezime:
+            td
+              | ');
+              | echo $_POST['lastname'];
+              | echo('
+          tr
+            td Spol:
+            td
+              | ');
+              | echo $_POST['gender'];
+              | echo('
+            tr
+              td Datum rođenja:
+              td
+                | ');
+                | echo $_POST['birthDate'];
+                | echo('
+            tr
+              td Mjesto rođenja:
+              td
+                | ');
+                | echo $_POST['birthPlace'];
+                | echo('
+            tr
+              td Krvna grupa:
+              td
+                | ');
+                | echo $_POST['address'];
+                | echo('
+            tr
+              td Tip krvi:
+              td
+                | ');
+                | echo $_POST['bloodGroup'];
+                | echo('
+            tr
+              td Bolesti:
+              td
+                | ');
+                | echo $_POST['diseases'];
+                | echo('
+            tr
+              td Opis bolesti:
+              td
+                | ');
+                | echo $_POST['diseasesDescription'];
+                | echo('
+            tr
+              td Alergije:
+              td
+                | ');
+                | echo $_POST['allergy'];
+                | echo('
+            tr
+              td Opis alergije
+              td
+                | ');
+                | echo $_POST['allergyDescription'];
+                | echo('
+        | ');
+        | ?
+    footer
+      .row
+        h4 Copyright ZKD, 2014
